@@ -85,7 +85,7 @@ Authors are required to adhere to the testing conventions established in the ori
 
 ## LaTeX Table
 
-An up-to-date LaTeX version of the survey table can be found [here](https://github.com/w-m/3dgs-compression-survey/blob/main/data_extraction/latex/3dgs_table.tex). Feel free to copy a line from the table into your research if you want to compare to the approach. Should you wish to copy the whole table you might need the following packages and definitions in your LaTeX preamble:
+Up-to-date LaTeX versions of the survey tables are available for [compression](https://github.com/w-m/3dgs-compression-survey/blob/main/data_extraction/latex/3dgs_table_compression.tex) and [compaction](https://github.com/w-m/3dgs-compression-survey/blob/main/data_extraction/latex/3dgs_table_densification.tex). Feel free to copy a line from the table into your research if you want to compare to the approach. Should you wish to copy the whole table you might need the following packages and definitions in your LaTeX preamble:
 ```
 \usepackage{booktabs}
 \usepackage[table]{xcolor}

@@ -16,15 +16,15 @@
 Method & Rank & \multicolumn{4}{c|}{Tanks and Temples} & \multicolumn{4}{c|}{Mip-NeRF 360} & \multicolumn{4}{c|}{Deep Blending} \\
  & \tiny  & \tiny PSNR$\uparrow$ & \tiny SSIM$\uparrow$ & \tiny LPIPS$\downarrow$ & \tiny k Gauss & \tiny PSNR$\uparrow$ & \tiny SSIM$\uparrow$ & \tiny LPIPS$\downarrow$ & \tiny k Gauss & \tiny PSNR$\uparrow$ & \tiny SSIM$\uparrow$ & \tiny LPIPS$\downarrow$ & \tiny k Gauss \\
 \midrule
-Octree-GS & \cellcolor{lightred}2.7 & \cellcolor{lightred}24.68 & \cellcolor{lightred}.866 & \cellcolor{lightorange}.153 & 443 & \cellcolor{lightred}28.05 & \cellcolor{lightyellow}.819 & .217 & 657 & \cellcolor{lightred}30.49 & \cellcolor{lightorange}.912 & .241 & \cellcolor{lightred}112 \\
-Mini-Splatting & \cellcolor{lightorange}3.4 & 23.18 & .835 & .202 & \cellcolor{lightred}200 & 27.34 & \cellcolor{lightorange}.822 & .217 & \cellcolor{lightred}490 & \cellcolor{lightyellow}29.98 & \cellcolor{lightyellow}.908 & .253 & \cellcolor{lightyellow}350 \\
-Taming3DGS & \cellcolor{lightyellow}4.8 & 23.89 & .835 & .207 & \cellcolor{lightorange}290 & 27.29 & .799 & .253 & \cellcolor{lightorange}630 & 27.79 & .822 & .263 & \cellcolor{lightorange}270 \\
-Taming3DGS (Big) & \cellcolor{lightyellow}4.8 & \cellcolor{lightyellow}24.04 & .851 & .170 & 1,840 & \cellcolor{lightorange}27.79 & \cellcolor{lightorange}.822 & \cellcolor{lightorange}.205 & 3,310 & \cellcolor{lightorange}30.14 & .907 & \cellcolor{lightyellow}.235 & 2,810 \\
-AtomGS & 4.9 & 23.70 & .849 & \cellcolor{lightyellow}.166 & 1,480 & 27.38 & .816 & \cellcolor{lightyellow}.211 & 3,140 &  &  &  &  \\
-GaussianPro & 5.0 & \cellcolor{lightorange}24.09 & \cellcolor{lightorange}.862 & .185 & 1,441 & 27.43 & .813 & .219 & 3,403 & 29.79 & \cellcolor{lightred}.913 & \cellcolor{lightorange}.222 & 2,582 \\
-Color-cued GS & 5.5 & 23.18 & .830 & .198 & \cellcolor{lightyellow}370 & 27.07 & .797 & .249 & \cellcolor{lightyellow}646 & 29.71 & .902 & .255 & 644 \\
-Mini-Splatting-D & 5.7 & 23.23 & \cellcolor{lightyellow}.853 & \cellcolor{lightred}.140 & 4,280 & \cellcolor{lightyellow}27.51 & \cellcolor{lightred}.831 & \cellcolor{lightred}.176 & 4,690 & 29.88 & .906 & \cellcolor{lightred}.211 & 4,630 \\
-\textbf{3DGS-30K} & 6.6 & 23.14 & .841 & .183 & 1,783 & 27.21 & .815 & .214 & 3,362 & 29.41 & .903 & .243 & 2,975 \\
+Octree-GS & \cellcolor{lightred}3.1 & \cellcolor{lightred}24.68 & \cellcolor{lightred}.866 & \cellcolor{lightorange}.153 & 443 & \cellcolor{lightred}28.05 & \cellcolor{lightyellow}.819 & .217 & 657 & \cellcolor{lightred}30.49 & \cellcolor{lightorange}.912 & .241 & \cellcolor{lightred}112 \\
+GaussianSpa & \cellcolor{lightorange}3.6 & 24.00 & .850 & .172 & \cellcolor{lightyellow}322 & \cellcolor{lightorange}27.83 & .682 & .214 & \cellcolor{lightorange}558 & \cellcolor{lightyellow}30.13 & \cellcolor{lightred}.913 & .236 & 527 \\
+Mini-Splatting & \cellcolor{lightyellow}3.7 & 23.18 & .835 & .202 & \cellcolor{lightred}200 & 27.34 & \cellcolor{lightorange}.822 & .217 & \cellcolor{lightred}490 & 29.98 & \cellcolor{lightyellow}.908 & .253 & \cellcolor{lightyellow}350 \\
+Taming3DGS & 5.0 & 23.89 & .835 & .207 & \cellcolor{lightorange}290 & 27.29 & .799 & .253 & \cellcolor{lightyellow}630 & 27.79 & .822 & .263 & \cellcolor{lightorange}270 \\
+Taming3DGS (Big) & 5.2 & \cellcolor{lightyellow}24.04 & .851 & .170 & 1,840 & \cellcolor{lightyellow}27.79 & \cellcolor{lightorange}.822 & \cellcolor{lightorange}.205 & 3,310 & \cellcolor{lightorange}30.14 & .907 & \cellcolor{lightyellow}.235 & 2,810 \\
+GaussianPro & 5.4 & \cellcolor{lightorange}24.09 & \cellcolor{lightorange}.862 & .185 & 1,441 & 27.43 & .813 & .219 & 3,403 & 29.79 & \cellcolor{lightred}.913 & \cellcolor{lightorange}.222 & 2,582 \\
+AtomGS & 5.7 & 23.70 & .849 & \cellcolor{lightyellow}.166 & 1,480 & 27.38 & .816 & \cellcolor{lightyellow}.211 & 3,140 &  &  &  &  \\
+Mini-Splatting-D & 5.9 & 23.23 & \cellcolor{lightyellow}.853 & \cellcolor{lightred}.140 & 4,280 & 27.51 & \cellcolor{lightred}.831 & \cellcolor{lightred}.176 & 4,690 & 29.88 & .906 & \cellcolor{lightred}.211 & 4,630 \\
+Color-cued GS & 6.1 & 23.18 & .830 & .198 & 370 & 27.07 & .797 & .249 & 646 & 29.71 & .902 & .255 & 644 \\
 \bottomrule
 \end{tabular}
         \end{adjustbox}
