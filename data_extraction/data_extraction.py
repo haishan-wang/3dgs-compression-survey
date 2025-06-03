@@ -251,18 +251,9 @@ def read_csvs(sources_file):
                 scene_dfs = []
                 USE_AVG = 0
                 for scene in dataset_scenes[dataset]:
-                    location = url + "/" + dataset + "/" + scene + ".csv"
-                    fileRead = False
-                    if location[:4] != 'file':
-                        table = requests.get( location ).text
-                    else:
-                        location = location.replace("file:///", "/")
-                        if os.path.isfile(location):
-                            f = open(location)
-                            table = f.read()
-                        else:
-                            table = False
-
+                    table = requests.get(
+                        url + "/" + dataset + "/" + scene + ".csv"
+                    ).text
                     if table and table != "404: Not Found":
                         print("Downloaded", dataset)
                         data = StringIO(table)
@@ -312,17 +303,7 @@ def read_csvs(sources_file):
 
                 # average results
                 if USE_AVG:
-                    location = url + "/" + dataset + ".csv"
-                    if location[:4] != 'file':
-                        table = requests.get(location).text
-                    else:
-                        location = location.replace("file:///", "/")
-                        if os.path.isfile(location):
-                            f = open(location)
-                            table = f.read()
-                        else:
-                            table = False
-
+                    table = requests.get(url + "/" + dataset + ".csv").text
                     # if it worked
                     if table and table != "404: Not Found":
                         print("Downloaded", dataset)
