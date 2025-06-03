@@ -1,5 +1,5 @@
 pateux2025bogauss:
-  url: "file:///home/syap7420/Dev/3dgs-compression-survey/bogauss/results"
+  url: "https://github.com/w-m/3dgs-compression-survey/tree/bogauss/sources/results_pateux2025bogauss"
   is_csv: True
 
 wang2024contextgs:
